@@ -47,6 +47,35 @@
 	gtag('config', 'UA-131758570-2');
 	</script>
 
+<script type="text/javascript">
+	
+	var _gaq = _gaq || [];
+	_gaq.push(['_setAccount', 'UA-131758570-2']);
+	_gaq.push(['_trackPageview']);
+
+	(function () {
+		var ga = document.createElement('script');
+		ga.type = 'text/javascript';
+		ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(ga, s);
+	})();
+
+	function trace_page(page) {
+		if ((typeof _gaq) == 'object') {
+			_gaq.push(['_trackPageview', '/' + page]);
+		}
+	}
+
+	function trace_event(category, actions, label) {
+		if ((typeof _gaq) == 'object') {
+			_gaq.push(['_trackEvent', category, actions, label]);
+		}
+	}
+
+</script>
+
 	<link href="./DocBank Dataset_files/css" rel="stylesheet" type="text/css">
 	<title>DocBank Dataset</title>
 </head>
@@ -120,14 +149,14 @@
 						</tr>
 						<tr>
 							<td><a
-									href="https://buaaeducn-my.sharepoint.com/:u:/g/personal/liminghao1630_buaa_edu_cn/ESlF5UYATl1Ihb9XIMXWyxkBVKjMilaycmyGKXamQvSJ1w?e=SqKcXs">DocBank_500K_txt.zip</a>
+									href="https://buaaeducn-my.sharepoint.com/:u:/g/personal/liminghao1630_buaa_edu_cn/ESlF5UYATl1Ihb9XIMXWyxkBVKjMilaycmyGKXamQvSJ1w?e=SqKcXs" onclick="trace_page('download DocBank txt');">DocBank_500K_txt.zip</a>
 							</td>
 							<td>3,167,771,976B (2.95GB)</td>
 							<td>f1e37183d43709b44b334385684fc343</td>
 						</tr>
 						<tr>
 							<td><a
-									href="https://buaaeducn-my.sharepoint.com/:f:/g/personal/liminghao1630_buaa_edu_cn/Elj7eVMf_TNHhrOlwhTyHXkBzu1elQARGMxmaRagt3_cJw?e=E9EedC">DocBank_500K_ori_img.zip</a>
+									href="https://buaaeducn-my.sharepoint.com/:f:/g/personal/liminghao1630_buaa_edu_cn/Elj7eVMf_TNHhrOlwhTyHXkBzu1elQARGMxmaRagt3_cJw?e=E9EedC" onclick="trace_page('download DocBank ori img');">DocBank_500K_ori_img.zip</a>
 							</td>
 							<td>50,907,670,187B (47.4GB)</td>
 							<td> - </td>
